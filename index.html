@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Tips - Gallery</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #222;
+    }
+
+    header {
+  background: linear-gradient(to right, #ffe600, #fbd300);
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-heading {
+  font-size: 3rem;
+  margin: 0;
+  background: linear-gradient(90deg, #ff0066, #ffcc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  animation: popIn 1s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+  font-weight: 500;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    .gallery-section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.4s ease-in-out;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="main-heading">🔥 College Tips Gallery 🔥</h1>
+    <p class="subtitle">Explore moments, memories, and magic as your campus life</p>
+  </header>
+
+  <section class="gallery-section">
+    <div class="gallery-container">
+      <div class="gallery-item"><img src="images/ph1.jpg" alt="Photo 1"></div>
+      <div class="gallery-item"><img src="images/ph (2).jpg" alt="Photo 2"></div>
+      <div class="gallery-item"><img src="images/ph (3).jpg" alt="Photo 3"></div>
+      <div class="gallery-item"><img src="images/ph (4).jpg" alt="Photo 4"></div>
+      <div class="gallery-item"><img src="images/ph (5).jpg" alt="Photo 5"></div>
+      <div class="gallery-item"><img src="images/ph (6).jpg" alt="Photo 6"></div>
+      <div class="gallery-item"><img src="images/ph (7).jpg" alt="Photo 7"></div>
+      <div class="gallery-item"><img src="images/ph (8).jpg" alt="Photo 8"></div>
+      <div class="gallery-item"><img src="images/ph (9).jpg" alt="Photo 9"></div>
+      <div class="gallery-item"><img src="images/ph (10).jpg" alt="Photo 10"></div>
+      <div class="gallery-item"><img src="images/ph (11).jpg" alt="Photo 11"></div>
+      <div class="gallery-item"><img src="images/ph (12).jpg" alt="Photo 12"></div>
+      <div class="gallery-item"><img src="images/ph (13).jpg" alt="Photo 13"></div>
+      <div class="gallery-item"><img src="images/ph (14).jpg" alt="Photo 14"></div>
+      <div class="gallery-item"><img src="images/ph (15).jpg" alt="Photo 15"></div>
+      <div class="gallery-item"><img src="images/ph (16).jpg" alt="Photo 16"></div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 College Tips. All rights reserved.
+  </footer>
+
+</body>
+</html>
